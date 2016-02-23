@@ -6,6 +6,6 @@ echo '<title>
 	:: '.$title.'
 	:: '.$tagLine.'
 </title>
-<link rel="stylesheet" href="_css/styles.css">'
+<link rel="stylesheet" href="css/styles.css">'
 
 ?>
