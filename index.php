@@ -1,5 +1,6 @@
 <?php 
-require 'require/error_reporting.php';
+require_once 'require/error_reporting.php';
+require_once 'require/login_check.php';
 
 ?>
 <!doctype html>

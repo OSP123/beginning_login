@@ -29,7 +29,7 @@ if (isset($_POST['login']) && trim($_POST['login']) != '') {
 		$userID = $userArray['ID'];
 		insert_or_update_info("UPDATE users SET Salt='$salt' WHERE ID='$userID'");
 
-		die("You are now logged in as $username");
+		die("You are now logged in as $username. <a href='index.php'>Home</a>");
 	}
 	else {
 		echo "Please enter a username and password.";
@@ -58,6 +58,14 @@ if (isset($_POST['login']) && trim($_POST['login']) != '') {
 						<input id="password" type="password" name="password" value=""/>
 					<li>
 						<input type="submit" name="login" value="Login">
+					</li>
+				</ul>
+			</form>
+            
+            <form method="post" action="logout.php">
+				<ul>
+					<li>
+						<input type="submit" name="logout" value="Logout">
 					</li>
 				</ul>
 			</form>

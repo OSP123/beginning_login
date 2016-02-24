@@ -35,8 +35,10 @@ if (isset($_POST['register']) && trim($_POST['register']) != '') {
 
 		setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");
 		setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
+        
+        print_r($_COOKIE);
 
-		die("Your account has been created and you are now logged in.");
+		die("Your account has been created and you are now logged in. <a href='index.php'>Home</a>");
 	}
 	else {
 		echo "Please enter a username and password.";

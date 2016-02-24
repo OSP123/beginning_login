@@ -1,5 +1,5 @@
 <?php
-require 'require/functions.php';
+require_once 'require/functions.php';
 require_once 'require/connect.php';
 
 $result = get_all_info("SELECT * FROM `Staff`");
